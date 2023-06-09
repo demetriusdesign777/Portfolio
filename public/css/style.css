@@ -1,0 +1,509 @@
+/*** Fonts ***/
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Oswald&family=Playfair+Display:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  color: #fff;
+  background-color: #202020;
+}
+
+/********* Hero Section **********/
+
+.heroSec {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.logo,
+.subLogo {
+  width: 50%;
+  height: 100%;
+}
+
+.logo {
+  position: relative;
+  order: 1;
+}
+
+.logo h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin: 412px 0 0 90px;
+}
+
+.logo .shapeDiv {
+  width: 150px;
+  height: 135px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  border: 5px solid #fff;
+  border-radius: 7px;
+  opacity: 20%;
+  position: absolute;
+  top: 320px;
+  left: 90px;
+}
+
+.logo .shapeDiv h2 {
+  font-size: 96px;
+  font-family: "Arial", serif;
+  opacity: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.subLogo {
+  display: flex;
+  flex-direction: column;
+}
+
+.subLogo h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 48px;
+  margin: 336px 0 30px 207px;
+  width: 420px;
+}
+
+.subLogo .heroBtn {
+  width: 200px;
+  height: 50px;
+  border: 2px solid #fff;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  background-color: #202020;
+  color: #fff;
+  font-size: 24px;
+  margin: 0 0 20px 207px;
+  cursor: pointer;
+}
+
+.subLogo .heroBtn-3 {
+  margin-bottom: 0;
+}
+
+/********** Projects Section **********/
+
+.projectsSec {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectsSec .btn {
+  width: 150px;
+  height: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  border: 2px solid #fff;
+  background-color: #202020;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.project {
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+
+.projectTitle {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.projectTitle-1 {
+  background-color: #1a820f;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+div.projectTitle-1 h4.wp {
+  font-family: "Baloo 2", cursive;
+  font-weight: bold;
+  font-size: 54px;
+  margin: 0 0 -10px 0;
+}
+
+div.projectTitle-1 h4.wp span {
+  color: #f9d71c;
+}
+
+div.projectTitle-1 p {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+}
+
+div.projectTitle-1 div.wpSpan {
+  font-family: "Baloo 2", cursive;
+  font-size: 84px;
+  font-weight: bold;
+  margin: 22.5px 20px 0 0;
+  color: #00472c;
+}
+
+div.project div.projectDescDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+div.project div.projectDescDiv div.projectDesc {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+div.project div.projectDescDiv div.projectDesc button.liveBtn {
+  margin: 0 0 20px 0;
+}
+
+div.project div.projectDescDiv div.projectDesc h5 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+div.project div.projectDescDiv div.projectDesc p {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 30px 0;
+}
+
+div.projectTitle-2 {
+  position: relative;
+  order: 1;
+}
+
+div.projectTitle-2 h4.plant {
+  font-size: 54px;
+  font-weight: bold;
+}
+
+div.projectTitle-2 .imgHolder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+div.projectTitle-2 .imgHolder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+div.projectTitle-3 {
+  background-color: #fff;
+}
+
+div.projectTitle-3 h4.pro {
+  font-size: 54px;
+  color: #1d8a15;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+div.projectTitle-3 h4.pro span {
+  padding: 3px;
+  border-radius: 0 15px 15px 0;
+  font-size: 54px;
+  background-color: #1d8a15;
+  color: #fff;
+}
+
+/********** Media Queries **********/
+
+/***** Between 1000px width & 1500px width *****/
+
+@media (min-width: 1000px) and (max-width: 1499px) {
+  /********* Hero Section **********/
+
+  .logo h1 {
+    font-size: 36px;
+    margin: 412px 0 0 90px;
+  }
+
+  .logo .shapeDiv {
+    width: 140px;
+    height: 130px;
+    top: 311.5px;
+  }
+
+  .logo .shapeDiv h2 {
+    font-size: 84px;
+  }
+
+  .subLogo h3 {
+    font-size: 27px;
+    line-height: 40.5px;
+    margin: 336px 0 20px 185px;
+    width: 420px;
+  }
+
+  .subLogo .heroBtn {
+    width: 175px;
+    height: 40px;
+    font-size: 21px;
+    margin: 0 0 20px 185px;
+  }
+
+  /********** Projects Section **********/
+
+  .project {
+    height: 500px;
+  }
+
+  div.projectTitle-1 h4.wp {
+    font-size: 42px;
+    margin: 0 0 -10px 0;
+  }
+
+  div.projectTitle-1 p {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+  }
+
+  div.projectTitle-1 div.wpSpan {
+    font-size: 72px;
+    margin: 22.5px 20px 0 0;
+  }
+
+  div.project div.projectDescDiv div.projectDesc {
+    width: 80%;
+  }
+
+  div.projectTitle-2 h4.plant {
+    font-size: 36px;
+  }
+}
+
+/***** Between 500px width & 1000px width *****/
+
+@media (min-width: 500px) and (max-width: 999px) {
+  /********* Hero Section **********/
+
+  .heroSec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 30%;
+    height: auto;
+    position: absolute;
+  }
+
+  .logo h1 {
+    display: none;
+  }
+
+  .logo .shapeDiv {
+    width: 130px;
+    height: 115px;
+    top: 290px;
+    left: -33%;
+  }
+
+  .logo .shapeDiv h2 {
+    font-size: 72px;
+  }
+
+  .subLogo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subLogo h3 {
+    font-size: 30px;
+    line-height: 45px;
+    margin: 336px 0 20px 0;
+    width: 335px;
+  }
+
+  .subLogo .heroBtn {
+    width: 175px;
+    height: 40px;
+    font-size: 21px;
+    margin: 0 0 20px 0;
+  }
+
+  /********** Projects Section **********/
+
+  .project {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectTitle {
+    width: 100%;
+  }
+
+  div.projectTitle-1 h4.wp {
+    font-size: 42px;
+  }
+
+  div.projectTitle-1 div.wpSpan {
+    font-size: 72px;
+    margin: 22.5px 20px 0 0;
+  }
+
+  div.project div.projectDescDiv {
+    width: 100%;
+  }
+
+  div.project div.projectDescDiv div.projectDesc {
+    width: 70%;
+    margin: 50px 0 50px 0;
+  }
+
+  div.projectTitle-2 {
+    order: 0;
+  }
+
+  div.projectTitle-2 h4.plant {
+    font-size: 36px;
+  }
+}
+
+/***** Between 320px width & 500px width *****/
+
+@media (min-width: 320px) and (max-width: 499px) {
+  /********* Hero Section **********/
+
+  .heroSec {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 30%;
+    height: auto;
+    left: 0;
+    position: absolute;
+  }
+
+  .logo h1 {
+    display: none;
+  }
+
+  .logo .shapeDiv {
+    width: 100px;
+    height: 90px;
+    top: 90px;
+    left: 26%;
+  }
+
+  .logo .shapeDiv h2 {
+    font-size: 60px;
+  }
+
+  .subLogo {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subLogo h3 {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 125px 0 20px 0;
+    width: 100%;
+  }
+
+  .subLogo .heroBtn {
+    width: 175px;
+    height: 40px;
+    font-size: 21px;
+    margin: 0 0 20px 0;
+  }
+
+  /********** Projects Section **********/
+
+  .project {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectTitle {
+    width: 100%;
+  }
+
+  div.projectTitle-1 h4.wp {
+    font-size: 30px;
+    margin: 0 0 -7.5px 0;
+  }
+
+  div.projectTitle-1 div.wpSpan {
+    font-size: 42px;
+    margin: 12px 10px 0 0;
+  }
+
+  div.projectTitle-1 p {
+    font-size: 16px;
+  }
+
+  div.project div.projectDescDiv {
+    width: 100%;
+  }
+
+  div.project div.projectDescDiv div.projectDesc {
+    width: 80%;
+    margin: 50px 0 50px 0;
+  }
+
+  div.project div.projectDescDiv div.projectDesc h5 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  div.projectTitle-2 {
+    order: 0;
+  }
+
+  div.projectTitle-2 h4.plant {
+    font-size: 24px;
+  }
+
+  div.projectTitle-3 h4.pro {
+    font-size: 36px;
+  }
+
+  div.projectTitle-3 h4.pro span {
+    padding: 2px;
+    font-size: 36px;
+  }
+
+  .projectsSec .btn {
+    font-size: 16px;
+  }
+}
